@@ -1,0 +1,17 @@
+<div class="container pt-5">
+{{#if premio}}
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">¡PREMIO!</h4>
+    <h5>Tu Premio: {{ premio }}</h5>
+    <h5>Tu Número: {{ numero }}</h5>    
+    <p>Hoy pagas el Goiko</p>
+</div>
+{{else}}
+<div class="alert alert-danger" role="alert">
+    <h4 class="alert-heading">¡LOOSER!</h4>
+    <h5>Tu Premio: {{ premio }}</h5>
+    <h5>Tu Número: {{ numero }}</h5>   
+    <p>No te queda ni para la máquina</p>
+{{/if}}
+</div>
+
